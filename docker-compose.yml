@@ -8,6 +8,8 @@ services:
       - n8n_data:/home/node/.n8n
     environment:
       - GENERIC_TIMEZONE=Asia/Ho_Chi_Minh
+      - N8N_BASIC_AUTH_USER=admin         # Tên đăng nhập
+      - N8N_BASIC_AUTH_PASSWORD=strongPass123!  # Mật khẩu mạnh
     restart: unless-stopped
     networks:
       - microservices-net
