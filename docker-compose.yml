@@ -9,6 +9,10 @@ services:
     environment:
       - GENERIC_TIMEZONE=Asia/Ho_Chi_Minh
     restart: unless-stopped
-
+    networks:
+      - microservices-net
+networks:
+  microservices-net:
+    external: true
 volumes:
   n8n_data:
