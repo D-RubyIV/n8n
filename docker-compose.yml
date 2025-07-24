@@ -8,6 +8,7 @@ services:
       - n8n_data:/home/node/.n8n
     environment:
       - GENERIC_TIMEZONE=Asia/Ho_Chi_Minh
+      - WEBHOOK_URL=https://n8n.ph4ntoms.org/
     restart: unless-stopped
     networks:
       - microservices-net
